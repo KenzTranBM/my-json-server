@@ -4,7 +4,7 @@ const port = process.env.PORT || 3000; // Sử dụng cổng từ biến môi tr
 
 app.get('/data', (req, res) => {
     const jsonResponse = {
-        message: "Hello, World!",
+        message: "Hoang",
         success: true
     };
     res.json(jsonResponse);
