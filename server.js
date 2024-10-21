@@ -4,12 +4,12 @@ const port = process.env.PORT || 3000; // Sử dụng cổng từ biến môi tr
 
 app.get('/data', (req, res) => {
     const jsonResponse = {
-        key1: "1087250003",
-        key2: "00756F",
-        key3: "456",
-        key4: "131",
-        key5: "540",
-        key6: "221"
+        key1: "6866555261",
+        key2: "6D482F",
+        key3: "74",
+        key4: "610",
+        key5: "201",
+        key6: "737"
     };
     res.json(jsonResponse);
 });
