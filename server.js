@@ -46,6 +46,16 @@ app.get('/data3', (req, res) => {
 app.get('/data4', (req, res) => {
     const jsonResponse = {
         key2: "000000",
+        key3: "113",
+        key4: "796",
+        key5: "240",
+        key6: "923"
+    };
+    res.json(jsonResponse);
+});
+app.get('/data5', (req, res) => {
+    const jsonResponse = {
+        key2: "000000",
         key3: "660",
         key4: "6",
         key5: "787",
@@ -53,17 +63,17 @@ app.get('/data4', (req, res) => {
     };
     res.json(jsonResponse);
 });
-app.get('/data5', (req, res) => {
+app.get('/data6', (req, res) => {
     const jsonResponse = {
-        key2: "000000",
-        key3: "10",
-        key4: "5",
-        key5: "137",
-        key6: "132"
+        key2: "FFD635",
+        key3: "7",
+        key4: "629",
+        key5: "134",
+        key6: "756"
     };
     res.json(jsonResponse);
 });
-app.get('/data6', (req, res) => {
+app.get('/data7', (req, res) => {
     const jsonResponse = {
         key2: "FFFFFF",
         key3: "328",
@@ -73,23 +83,23 @@ app.get('/data6', (req, res) => {
     };
     res.json(jsonResponse);
 });
-app.get('/data7', (req, res) => {
-    const jsonResponse = {
-        key2: "FF9600",
-        key3: "561",
-        key4: "14",
-        key5: "688",
-        key6: "141"
-    };
-    res.json(jsonResponse);
-});
 app.get('/data8', (req, res) => {
     const jsonResponse = {
         key2: "FFFFFF",
-        key3: "123",
-        key4: "1",
-        key5: "250",
-        key6: "128"
+        key3: "87",
+        key4: "417",
+        key5: "214",
+        key6: "544"
+    };
+    res.json(jsonResponse);
+});
+app.get('/data9', (req, res) => {
+    const jsonResponse = {
+        key2: "000000",
+        key3: "853",
+        key4: "188",
+        key5: "977",
+        key6: "312"
     };
     res.json(jsonResponse);
 });
