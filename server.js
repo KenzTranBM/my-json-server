@@ -25,21 +25,21 @@ app.get('/data1', (req, res) => {
 });
 app.get('/data2', (req, res) => {
     const jsonResponse = {
-        key2: "3690EA",
-        key3: "80",
-        key4: "30",
-        key5: "207",
-        key6: "157"
+        key2: "000000",
+        key3: "660",
+        key4: "6",
+        key5: "787",
+        key6: "133"
     };
     res.json(jsonResponse);
 });
 app.get('/data3', (req, res) => {
     const jsonResponse = {
-        key2: "000000",
-        key3: "60",
-        key4: "515",
-        key5: "187",
-        key6: "642"
+        key2: "FFD635",
+        key3: "7",
+        key4: "629",
+        key5: "134",
+        key6: "756"
     };
     res.json(jsonResponse);
 });
