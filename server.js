@@ -15,94 +15,75 @@ app.get('/data', (req, res) => {
 });
 app.get('/data1', (req, res) => {
     const jsonResponse = {
-        key2: "000000",
-        key3: "501",
-        key4: "867",
-        key5: "628",
-        key6: "994"
+        key2: "FFFFFF",
+        key3: "96",
+        key4: "173",
+        key5: "223",
+        key6: "216"
     };
     res.json(jsonResponse);
 });
 app.get('/data2', (req, res) => {
     const jsonResponse = {
-        key2: "000000",
-        key3: "660",
-        key4: "6",
-        key5: "787",
-        key6: "133"
+        key2: "FFFFFF",
+        key3: "242",
+        key4: "12",
+        key5: "370",
+        key6: "38"
     };
     res.json(jsonResponse);
 });
 app.get('/data3', (req, res) => {
     const jsonResponse = {
-        key2: "FFD635",
-        key3: "7",
-        key4: "629",
-        key5: "134",
-        key6: "756"
+        key2: "000000",
+        key3: "5",
+        key4: "45",
+        key5: "132",
+        key6: "172"
     };
     res.json(jsonResponse);
 });
 app.get('/data4', (req, res) => {
     const jsonResponse = {
-        key2: "000000",
-        key3: "113",
-        key4: "796",
-        key5: "240",
-        key6: "923"
+        key2: "FF9600",
+        key3: "159",
+        key4: "835",
+        key5: "286",
+        key6: "962"
     };
     res.json(jsonResponse);
 });
 app.get('/data5', (req, res) => {
     const jsonResponse = {
         key2: "000000",
-        key3: "660",
-        key4: "6",
-        key5: "787",
-        key6: "133"
+        key3: "26",
+        key4: "637",
+        key5: "153",
+        key6: "764"
     };
     res.json(jsonResponse);
 });
 app.get('/data6', (req, res) => {
     const jsonResponse = {
-        key2: "FFD635",
-        key3: "7",
-        key4: "629",
-        key5: "134",
-        key6: "756"
+        key2: "000000",
+        key3: "785",
+        key4: "462",
+        key5: "912",
+        key6: "589"
     };
     res.json(jsonResponse);
 });
 app.get('/data7', (req, res) => {
     const jsonResponse = {
         key2: "FFFFFF",
-        key3: "328",
-        key4: "113",
-        key5: "455",
-        key6: "240"
+        key3: "722",
+        key4: "79",
+        key5: "849",
+        key6: "206"
     };
     res.json(jsonResponse);
 });
-app.get('/data8', (req, res) => {
-    const jsonResponse = {
-        key2: "FFFFFF",
-        key3: "87",
-        key4: "417",
-        key5: "214",
-        key6: "544"
-    };
-    res.json(jsonResponse);
-});
-app.get('/data9', (req, res) => {
-    const jsonResponse = {
-        key2: "000000",
-        key3: "853",
-        key4: "188",
-        key5: "977",
-        key6: "312"
-    };
-    res.json(jsonResponse);
-});
+
 
 app.listen(port, () => {
     console.log(`Server is running at http://localhost:${port}`);
