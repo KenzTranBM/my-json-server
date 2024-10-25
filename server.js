@@ -15,11 +15,11 @@ app.get('/data', (req, res) => {
 });
 app.get('/data1', (req, res) => {
     const jsonResponse = {
-        key2: "FFFFFF",
-        key3: "96",
-        key4: "173",
-        key5: "223",
-        key6: "216"
+        key2: "000000",
+        key3: "26",
+        key4: "637",
+        key5: "153",
+        key6: "764"
     };
     res.json(jsonResponse);
 });
