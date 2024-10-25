@@ -75,28 +75,28 @@ app.get('/data7', (req, res) => {
 });
 app.get('/temp1', (req, res) => {
     const jsonResponse = {
-        key1: "25",
+        key1: "https://t.me/notpixel/app?startapp=f1709562088_t",
         key2: "222",
         key3: "285",
-	key4: "2"
+	key4: "25"
     };
     res.json(jsonResponse);
 });
 app.get('/temp2', (req, res) => {
     const jsonResponse = {
-        key1: "29",
+        key1: "https://t.me/notpixel/app?startapp=f5034969487_t",
         key2: "627",
         key3: "935",
-	key4: "2"
+	key4: "29"
     };
     res.json(jsonResponse);
 });
 app.get('/temp3', (req, res) => {
     const jsonResponse = {
-        key1: "30",
+        key1: "https://t.me/notpixel/app?startapp=f5315487777_t",
         key2: "657",
         key3: "923",
-	key4: "2"
+	key4: "30"
     };
     res.json(jsonResponse);
 });
