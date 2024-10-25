@@ -75,9 +75,28 @@ app.get('/data7', (req, res) => {
 });
 app.get('/temp1', (req, res) => {
     const jsonResponse = {
-        key1: "FFFFFF",
-        key2: "722",
-        key3: "79"
+        key1: "25",
+        key2: "222",
+        key3: "285",
+	key4: "2"
+    };
+    res.json(jsonResponse);
+});
+app.get('/temp2', (req, res) => {
+    const jsonResponse = {
+        key1: "29",
+        key2: "627",
+        key3: "935",
+	key4: "2"
+    };
+    res.json(jsonResponse);
+});
+app.get('/temp3', (req, res) => {
+    const jsonResponse = {
+        key1: "30",
+        key2: "657",
+        key3: "923",
+	key4: "2"
     };
     res.json(jsonResponse);
 });
