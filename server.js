@@ -15,16 +15,6 @@ app.get('/data', (req, res) => {
 });
 app.get('/data1', (req, res) => {
     const jsonResponse = {
-        key2: "000000",
-        key3: "26",
-        key4: "637",
-        key5: "153",
-        key6: "764"
-    };
-    res.json(jsonResponse);
-});
-app.get('/data2', (req, res) => {
-    const jsonResponse = {
         key2: "00756F",
         key3: "643",
         key4: "930",
@@ -33,7 +23,7 @@ app.get('/data2', (req, res) => {
     };
     res.json(jsonResponse);
 });
-app.get('/data3', (req, res) => {
+app.get('/data2', (req, res) => {
     const jsonResponse = {
         key2: "000000",
         key3: "643",
@@ -43,7 +33,7 @@ app.get('/data3', (req, res) => {
     };
     res.json(jsonResponse);
 });
-app.get('/data4', (req, res) => {
+app.get('/data3', (req, res) => {
     const jsonResponse = {
         key2: "FFD635",
         key3: "643",
@@ -83,7 +73,14 @@ app.get('/data7', (req, res) => {
     };
     res.json(jsonResponse);
 });
-
+app.get('/temp1', (req, res) => {
+    const jsonResponse = {
+        key1: "FFFFFF",
+        key2: "722",
+        key3: "79"
+    };
+    res.json(jsonResponse);
+});
 
 app.listen(port, () => {
     console.log(`Server is running at http://localhost:${port}`);
