@@ -25,31 +25,31 @@ app.get('/data1', (req, res) => {
 });
 app.get('/data2', (req, res) => {
     const jsonResponse = {
-        key2: "FFFFFF",
-        key3: "242",
-        key4: "12",
-        key5: "370",
-        key6: "38"
+        key2: "00756F",
+        key3: "643",
+        key4: "930",
+        key5: "655",
+        key6: "942"
     };
     res.json(jsonResponse);
 });
 app.get('/data3', (req, res) => {
     const jsonResponse = {
         key2: "000000",
-        key3: "5",
-        key4: "45",
-        key5: "132",
-        key6: "172"
+        key3: "643",
+        key4: "930",
+        key5: "655",
+        key6: "942"
     };
     res.json(jsonResponse);
 });
 app.get('/data4', (req, res) => {
     const jsonResponse = {
-        key2: "FF9600",
-        key3: "159",
-        key4: "835",
-        key5: "286",
-        key6: "962"
+        key2: "FFD635",
+        key3: "643",
+        key4: "930",
+        key5: "655",
+        key6: "942"
     };
     res.json(jsonResponse);
 });
