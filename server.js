@@ -91,9 +91,9 @@ app.get('/temp2', (req, res) => {
 });
 app.get('/temp3', (req, res) => {
     const jsonResponse = {
-        key1: "https://t.me/notpixel/app?startapp=x196_y196",
-        key2: "https://t.me/notpixel/app?startapp=f1618637560_t",
-        key3: "11"
+        key1: "https://t.me/notpixel/app?startapp=x642_y924",
+        key2: "https://t.me/notpixel/app?startapp=f6847025987_t_s644100",
+        key3: "17"
     };
     res.json(jsonResponse);
 });
