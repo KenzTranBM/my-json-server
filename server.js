@@ -75,10 +75,9 @@ app.get('/data7', (req, res) => {
 });
 app.get('/temp1', (req, res) => {
     const jsonResponse = {
-        key1: "https://t.me/notpixel/app?startapp=f1709562088_t",
-        key2: "222",
-        key3: "285",
-	key4: "25"
+        key1: "https://t.me/notpixel/app?startapp=x550_y697",
+        key2: "https://t.me/notpixel/app?startapp=f1656010571_t",
+        key3: "2"
     };
     res.json(jsonResponse);
 });
