@@ -75,25 +75,25 @@ app.get('/data7', (req, res) => {
 });
 app.get('/temp1', (req, res) => {
     const jsonResponse = {
-        key1: "https://t.me/notpixel/app?startapp=x642_y924",
-        key2: "https://t.me/notpixel/app?startapp=f6847025987_t_s644100",
-        key3: "17"
+      	key1: "https://t.me/notpixel/app?startapp=x855_y261",
+        key2: "https://t.me/notpixel/app?startapp=f1035991820_t",
+        key3: "25"
     };
     res.json(jsonResponse);
 });
 app.get('/temp2', (req, res) => {
     const jsonResponse = {
-      	key1: "https://t.me/notpixel/app?startapp=x642_y924",
-        key2: "https://t.me/notpixel/app?startapp=f6847025987_t_s644100",
-        key3: "17"
+      	key1: "https://t.me/notpixel/app?startapp=x855_y261",
+        key2: "https://t.me/notpixel/app?startapp=f1035991820_t",
+        key3: "25"
     };
     res.json(jsonResponse);
 });
 app.get('/temp3', (req, res) => {
     const jsonResponse = {
-        key1: "https://t.me/notpixel/app?startapp=x642_y924",
-        key2: "https://t.me/notpixel/app?startapp=f6847025987_t_s644100",
-        key3: "17"
+      	key1: "https://t.me/notpixel/app?startapp=x855_y261",
+        key2: "https://t.me/notpixel/app?startapp=f1035991820_t",
+        key3: "25"
     };
     res.json(jsonResponse);
 });
