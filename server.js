@@ -75,17 +75,17 @@ app.get('/data7', (req, res) => {
 });
 app.get('/temp1', (req, res) => {
     const jsonResponse = {
-        key1: "https://t.me/notpixel/app?startapp=x16_y16",
-        key2: "https://t.me/notpixel/app?startapp=f1818573594_t",
-        key3: "13"
+        key1: "https://t.me/notpixel/app?startapp=x642_y924",
+        key2: "https://t.me/notpixel/app?startapp=f6847025987_t_s644100",
+        key3: "17"
     };
     res.json(jsonResponse);
 });
 app.get('/temp2', (req, res) => {
     const jsonResponse = {
-        key1: "https://t.me/notpixel/app?startapp=x16_y16",
-        key2: "https://t.me/notpixel/app?startapp=f1907686444_t",
-        key3: "3"
+      	key1: "https://t.me/notpixel/app?startapp=x642_y924",
+        key2: "https://t.me/notpixel/app?startapp=f6847025987_t_s644100",
+        key3: "17"
     };
     res.json(jsonResponse);
 });
