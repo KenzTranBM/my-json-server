@@ -7,6 +7,9 @@ const port = process.env.PORT || 3000;
 // Cấu hình body-parser
 app.use(bodyParser.urlencoded({ extended: true }));
 
+// Biến để lưu trữ giá trị
+let storedValues = {};
+
 // Route để hiển thị form cập nhật
 app.get('/update', (req, res) => {
     res.send(`
@@ -28,10 +31,18 @@ app.get('/update', (req, res) => {
 app.post('/submit', (req, res) => {
     const { id, id1, id2, id3 } = req.body;
 
+    // Lưu trữ giá trị
+    storedValues = { id, id1, id2, id3 };
+
     // Gọi hàm cập nhật file
     updateFile(id, id1, id2, id3)
         .then(() => res.send('Cập nhật thành công!'))
         .catch(err => res.status(500).send('Có lỗi xảy ra: ' + err));
+});
+
+// Route để đọc giá trị đã lưu
+app.get('/temp1', (req, res) => {
+    res.send(storedValues);
 });
 
 // Lắng nghe cổng
