@@ -6,7 +6,7 @@ const path = require('path');
 const filePath = path.join(__dirname, 'server.js'); // Đảm bảo đường dẫn đúng
 
 // Hàm cập nhật file server.js
-function updateFile(temp1, temp2, temp3) {
+function updateFile(id, id1, id2, id3) {
     return new Promise((resolve, reject) => {
         fs.readFile(filePath, 'utf8', (err, data) => {
             if (err) {
@@ -14,11 +14,14 @@ function updateFile(temp1, temp2, temp3) {
                 return reject('Không thể đọc file');
             }
 
-            // Cập nhật nội dung
+            // Cập nhật nội dung dựa trên ID
             const updatedData = data
-                .replace(/https?:\/\/[^\s]+/, temp1) // Cập nhật temp1
-                .replace(/https?:\/\/[^\s]+/, temp2) // Cập nhật temp2
-                .replace(/\d+$/, temp3); // Cập nhật temp3
+                .replace(/temp\[(\d+)\] = {.*?}/g, (match, tempId) => {
+                    if (tempId === id) {
+                        return `temp[${tempId}] = { id1: "${id1}", id2: "${id2}", id3: "${id3}" }`;
+                    }
+                    return match; // Giữ nguyên nếu không khớp ID
+                });
 
             fs.writeFile(filePath, updatedData, 'utf8', (err) => {
                 if (err) {
