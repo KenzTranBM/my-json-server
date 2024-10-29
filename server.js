@@ -7,13 +7,6 @@ const port = process.env.PORT || 3000;
 // Cấu hình body-parser
 app.use(bodyParser.urlencoded({ extended: true }));
 
-// Giả định các temp đã được định nghĩa
-let temp = [
-    { id1: "0", id2: "0", id3: "0" }, // temp[0]
-    { id1: "0", id2: "0", id3: "0" }, // temp[1]
-    { id1: "0", id2: "0", id3: "0" }  // temp[2]
-];
-
 // Route để hiển thị form cập nhật
 app.get('/update', (req, res) => {
     res.send(`
@@ -39,19 +32,6 @@ app.post('/submit', (req, res) => {
     updateFile(id, id1, id2, id3)
         .then(() => res.send('Cập nhật thành công!'))
         .catch(err => res.status(500).send('Có lỗi xảy ra: ' + err));
-});
-
-// Route để lấy giá trị temp
-app.get('/temp1', (req, res) => {
-    res.json(temp[0]); // Trả về dữ liệu của temp[0]
-});
-
-app.get('/temp2', (req, res) => {
-    res.json(temp[1]); // Trả về dữ liệu của temp[1]
-});
-
-app.get('/temp3', (req, res) => {
-    res.json(temp[2]); // Trả về dữ liệu của temp[2]
 });
 
 // Lắng nghe cổng
