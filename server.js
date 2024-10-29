@@ -129,6 +129,8 @@ app.get('/update', (req, res) => {
                     <input type="text" id="key2" name="key2" required>
                     <label for="key3">Số Lần Zoom</label>
                     <input type="text" id="key3" name="key3" required>
+                    <label for="key4">Color</label>
+                    <input type="text" id="key4" name="key4" required> <!-- Thêm ô input cho Key4 -->
                     <button type="submit">Cập nhật</button>
                 </form>
             </div>
@@ -145,6 +147,7 @@ app.get('/update', (req, res) => {
                 const key1YInput = document.getElementById('key1Y');
                 const key2Input = document.getElementById('key2');
                 const key3Input = document.getElementById('key3');
+                const key4Input = document.getElementById('key4'); // Thêm Key4
 
                 idInput.addEventListener('input', function() {
                     const id = this.value;
@@ -157,11 +160,13 @@ app.get('/update', (req, res) => {
                                 key1YInput.value = key1Y || '';
                                 key2Input.value = data.Key2 || '';
                                 key3Input.value = data.Key3 || '';
+                                key4Input.value = data.Key4 || ''; // Cập nhật Key4
                             } else {
                                 key1XInput.value = '';
                                 key1YInput.value = '';
                                 key2Input.value = '';
                                 key3Input.value = '';
+                                key4Input.value = ''; // Xóa Key4
                             }
                         });
                 });
@@ -185,10 +190,10 @@ app.get('/update', (req, res) => {
 
 // Route để xử lý form submit
 app.post('/submit', (req, res) => {
-    const { id, key1X, key1Y, key2, key3 } = req.body;
+    const { id, key1X, key1Y, key2, key3, key4 } = req.body; // Thêm Key4
 
     // Tạo hoặc cập nhật giá trị theo ID
-    storedValues[id] = { Key1: `${key1X},${key1Y}`, Key2: key2, Key3: key3 };
+    storedValues[id] = { Key1: `${key1X},${key1Y}`, Key2: key2, Key3: key3, Key4: key4 }; // Lưu Key4
 
     // Trả về thông báo thành công
     res.send('Cập nhật thành công!');
