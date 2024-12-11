@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 let storedValues = {};
 
 // Route để hiển thị form cập nhật
-app.get('/update', (req, res) => {
+app.get('/updatenew', (req, res) => {
     res.send(`
         <!DOCTYPE html>
         <html lang="vi">
@@ -125,11 +125,11 @@ app.get('/update', (req, res) => {
                         <input type="text" id="key1X" name="key1X" placeholder="X" required>
                         <input type="text" id="key1Y" name="key1Y" placeholder="Y" required>
                     </div>
-                    <label for="key2">Link Temp</label>
+                    <label for="key2">Color</label>
                     <input type="text" id="key2" name="key2" required>
-                    <label for="key3">Số Lần Zoom</label>
+                    <label for="key3">Số Key</label>
                     <input type="text" id="key3" name="key3" required>
-                    <label for="key4">Color</label>
+                    <label for="key4">Mã Key</label>
                     <input type="text" id="key4" name="key4" required> <!-- Thêm ô input cho Key4 -->
                     <button type="submit">Cập nhật</button>
                 </form>
